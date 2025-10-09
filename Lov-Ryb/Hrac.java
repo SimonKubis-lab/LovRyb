@@ -22,9 +22,11 @@ public class Hrac extends Actor
             this.move(1);
         }else if(Greenfoot.isKeyDown("d")){
             this.setRotation(0);
+            this.setImage("žralok.png");
             this.move(1);
         }else if(Greenfoot.isKeyDown("a")){
             this.setRotation(180);
+            this.setImage("žralok 2.png");
             this.move(1);
         }
     }

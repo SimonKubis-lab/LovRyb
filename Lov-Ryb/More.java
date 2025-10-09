@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class More extends World
 {
-
+    private Hrac hrac;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -17,6 +17,8 @@ public class More extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(12, 9, 100); 
-        this.addObject(new Hrac(),5,4);
+        this.hrac = new Hrac();
+        this.addObject(this.hrac,1,1);
+        this.addObject(new Ryba(),9,7);
     }
 }
