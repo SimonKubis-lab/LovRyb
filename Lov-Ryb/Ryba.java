@@ -18,6 +18,20 @@ public class Ryba extends Actor
         this.meskanie=5;
         this.pocitadloMeskania=0;
     }
+    private int body;
+    public Ryba(int body){
+        this.body=body;
+    }
+    
+    public int zjedz(){
+        this.obnovRybu();
+        return this.body;
+    }
+    
+    protected void obnovRybu(){
+        More more=(More) this.getWorld();
+        more.removeObject(this);
+    }
     public void act()
     {
        if(this.meskanie==this.pocitadloMeskania){
