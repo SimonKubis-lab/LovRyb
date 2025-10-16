@@ -19,6 +19,6 @@ public class More extends World
         super(12, 9, 100); 
         this.hrac = new Hrac();
         this.addObject(this.hrac,1,1);
-        this.addObject(new Ryba(),9,7);
+        this.addObject(new Ryba(10),Greenfoot.getRandomNumber(this.getWidth()),Greenfoot.getRandomNumber(this.getHeight()));
     }
 }

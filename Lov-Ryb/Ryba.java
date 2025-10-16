@@ -10,16 +10,11 @@ public class Ryba extends Actor
 {
     private int pocitadloMeskania;
     private int meskanie;
-    /**
-     * Act - do whatever the Ryba wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public Ryba(){
+    private int body;
+    
+    public Ryba(int body){
         this.meskanie=5;
         this.pocitadloMeskania=0;
-    }
-    private int body;
-    public Ryba(int body){
         this.body=body;
     }
     
