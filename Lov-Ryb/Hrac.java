@@ -43,24 +43,12 @@ public class Hrac extends Actor
         if(this.pocitadloMeskania==this.meskanie){
             this.pohyb();
             this.pocitadloMeskania=0;
-            this.skusZjestRybu();
         }else{
             this.pocitadloMeskania+=1;
         }
     }
-     private boolean skusZjestRybu(){
-        World More=this.getWorld();
-        if(More.getObjectsAt(this.getX(), this.getY(), Ryba.class).isEmpty()){
-            return false;
-        }else{
-            List<Ryba> rybu=More.getObjectsAt(this.getX(), this.getY(),Ryba.class);
-            for(Ryba ryba: rybu){
-                this.body+=ryba.zjedz();
-                if(this.pocitadlo!=null){
-                    this.pocitadlo.setValue(this.body);
-                }
-            }
-            return true;
-        }
+    
+    public void pridajBody(int body) {
+        this.body += body;
     }
 }

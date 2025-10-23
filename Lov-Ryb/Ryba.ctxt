@@ -1,14 +1,15 @@
 #BlueJ class context
 comment0.target=Ryba
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ryba\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=body
-comment1.target=Ryba(int)
+comment1.params=body\ casDoOdplavania\ ideVlavo
+comment1.target=Ryba(int,\ int,\ boolean)
 comment2.params=
-comment2.target=int\ zjedz()
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Ryba\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=
-comment3.target=void\ obnovRybu()
+comment3.target=void\ hybSa()
 comment4.params=
-comment4.target=void\ act()
+comment4.target=void\ zmenObrazok()
 comment5.params=
-comment5.target=boolean\ jeNaKraji()
+comment5.target=int\ dajBody()
 numComments=6
