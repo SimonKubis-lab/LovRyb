@@ -11,6 +11,7 @@ public class More extends World
     private Hrac hrac;
     private int casNaDalsiuRybu;
     private int pocitadloVytvoreniaRyby;
+    private PocitadloBodov pocitadlo;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -25,6 +26,9 @@ public class More extends World
         this.pocitadloVytvoreniaRyby = 0;
         this.addObject(this.hrac,1,1);
         this.addObject(new Ryba(10, 200,false),Greenfoot.getRandomNumber(this.getWidth()),Greenfoot.getRandomNumber(this.getHeight()));
+        this.pocitadlo = new PocitadloBodov();
+        this.addObject(this.pocitadlo, 3, 0);
+        this.hrac.pridajPocitadlo(this.pocitadlo);
     }
     public void act() {
         if (this.casNaDalsiuRybu == this.pocitadloVytvoreniaRyby) {

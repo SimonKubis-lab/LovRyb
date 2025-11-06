@@ -50,5 +50,11 @@ public class Hrac extends Actor
     
     public void pridajBody(int body) {
         this.body += body;
+        if (this.pocitadlo != null) {
+            this.pocitadlo.setValue(this.body);
+        }
+    }
+    public void pridajPocitadlo(PocitadloBodov pocitadlo){
+        this.pocitadlo=pocitadlo;
     }
 }
